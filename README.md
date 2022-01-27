@@ -2,6 +2,16 @@
 
 This repository will store some little web projects I create.
 
+<hr>
+
+Most projects need a simple HTTP server. Just run
+
+```python3 -m http.server 8000```
+
+and you'll be fine.
+
+<hr>
+
 ## Todo list
 
 - [ ] Create `index.html`;
