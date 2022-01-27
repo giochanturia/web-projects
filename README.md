@@ -15,10 +15,11 @@ and you'll be fine.
 ## Todo list
 
 - [x] Create `index.html`;
+- [x] Project: `bike`;
 - [x] Project: `wordcards`;
 - [ ] Project: `binary`;
 - [ ] Project: `rulers`;
-- [ ] Project: `world-map`;
+- [ ] Project: `world-map` (in progress);
 - [ ] Project: `artworks`;
 - [ ] Project: `notes`;
 - [ ] Implement dark themes everywhere;
