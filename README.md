@@ -14,11 +14,12 @@ and you'll be fine.
 
 ## Todo list
 
-- [ ] Create `index.html`;
+- [x] Create `index.html`;
 - [x] Project: `wordcards`;
 - [ ] Project: `binary`;
 - [ ] Project: `rulers`;
 - [ ] Project: `world-map`;
 - [ ] Project: `artworks`;
 - [ ] Project: `notes`;
+- [ ] Implement dark themes everywhere;
 - [ ] Come up with more project ideas...
