@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="../giochanturia_favicon.ico">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- Cards styles and animation: -->
+    <link href="card_styles.css" rel="stylesheet">
+    <script>
+    function flip_card() {
+      document.getElementsByClassName('flip-card-inner')[0].classList.toggle('flip-card-anim');
+    }
+    </script>
+
+    <!-- Word loading: -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="load_words.js"></script>
+
+    <title>Wordcards</title>
+  </head>
+  <body>
+    <div id="container">
+      <center><h1>Wordcards</h1></center>
+      <hr/>
+      <p style="text-align:center;">
+        <b id="wordcount">1</b> word(s) loaded.
+      </p>
+      <center>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>Front</h3>
+          </div>
+          <div class="flip-card-back">
+            <h3>Back</h3>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light flip-buttons" onclick="flip_card()">[F]lip card</button>
+      <button type="button" class="btn btn-dark  flip-buttons" onclick="load_next_word()">[N]ext card</button>
+    </center>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flipBeforeNext" checked>
+        <label class="form-check-label" for="flipBeforeNext">Flip to front before going to the next card</label>
+      </div>
+      
+      <hr/>
+      <form>
+        <div class="form-group">
+          <p><u>Upload your wordlist here</u>:</p>
+          <input type="file" class="form-control-file" id="exampleFormControlFile1" onchange="use_file(this)">
+        </div>
+        or <button type="button" class="btn btn-danger  flip-buttons" onclick="load_default_file()">Load the default file again</button>.
+      </form>
+    </div>
+  </body>
+</html>
