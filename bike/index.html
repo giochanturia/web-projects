@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <title>Bike</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/x-icon" href="../giochanturia_favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <div id="sidebar">
+        <div id="sidebar-content">
+            <div class="btn-group-vertical" role="group" aria-label="Basic example">
+                <h3>Bicycle parts:</h3>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Brakes', this)">
+                    Brakes</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Cassette', this)">
+                    Cassette</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Chain', this)">
+                    Chain</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Derailleur_Front', this)">
+                    Derailleur (front)</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Derailleur_Rear', this)">
+                    Derailleur (rear)</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Disk_Brake', this)">
+                    Disk Brakes</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Fenders', this)">
+                    Fenders</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Frame', this)">
+                    Frame</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Grip', this)">
+                    Grip</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Handlebar', this)">
+                    Handlebar</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Lights', this)">
+                    Lights</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Nuts', this)">
+                    Nuts and Bolts</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Pedals', this)">
+                    Pedals</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Pedal_Crankset', this)">
+                    Pedal Crankset</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Seat', this)">
+                    Seat</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Seatpost', this)">
+                    Seatpost</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Suspension_Fork', this)">
+                    Suspension Fork</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Tires', this)">
+                    Tires</a>
+                <a href="#" class="bike-item" onmouseover="emphasizeMesh('Wheels', this)">
+                    Wheels</a>
+            </div>
+        </div>
+    </div>
+    <!--- Link to the last version of BabylonJS --->
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

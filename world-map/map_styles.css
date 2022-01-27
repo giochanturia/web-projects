@@ -1,0 +1,12 @@
+.wc {
+    fill: red;
+}
+
+.cc {
+    fill: green;
+}
+
+#map {
+    width: 80%;
+    height: 400px;
+}
