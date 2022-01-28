@@ -23,4 +23,5 @@ and you'll be fine.
 - [ ] Project: `artworks`;
 - [ ] Project: `notes`;
 - [ ] Implement dark themes everywhere;
+- [ ] Port other projects from `portfeuille` and terminate the repository;
 - [ ] Come up with more project ideas...
