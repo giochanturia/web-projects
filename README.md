@@ -19,7 +19,7 @@ and you'll be fine.
 - [x] Project: `wordcards`;
 - [ ] Project: `binary`;
 - [ ] Project: `rulers`;
-- [ ] Project: `world-map` (in progress);
+- [x] Project: `world-map`;
 - [ ] Project: `artworks`;
 - [ ] Project: `notes`;
 - [ ] Implement dark themes everywhere;
