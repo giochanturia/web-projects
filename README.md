@@ -22,6 +22,11 @@ and you'll be fine.
 - [x] Project: `world-map`;
 - [ ] Project: `artworks`;
 - [ ] Project: `notes`;
+- [ ] Project: `math-problem-generator`;
 - [ ] Implement dark themes everywhere;
+- [ ] Implement breadcrumbs;
+- [ ] Implement READMEs in the footer;
+- [ ] Implement timers for ed. games;
+- [ ] Implement exports where it makes sense;
 - [ ] Port other projects from `portfeuille` and terminate the repository;
 - [ ] Come up with more project ideas...

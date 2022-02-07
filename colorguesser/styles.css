@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+body {
+    font-family: 'Cutive Mono', monospace;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+
+}
+
+.container {
+    display: fixed;
+    min-width: 900px;
+    justify-content: space-evenly;
+    padding: 25px 50px;
+    margin: 25px auto;
+    border: 1px dashed gray;
+    border-radius: 24px;
+}
+
+.container div {
+    display: flex;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+#question {
+    font-size: 36pt;
+}
+
+#pick {
+    font-size: 28pt;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding: 0px 20px;
+    cursor: crosshair;
+}
+
+#difficulty {
+    align-items: center;
+}
+
+#color-rgb {
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    width: 200px;
+    border: 0px solid black;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#color-rgb span {
+    display: block;
+    width: 200px;
+}
+
+.color {
+    color: #393e46;
+    background-color: #eeeeee;
+}
+
+.rgb {
+    color: #eeeeee;
+    background-color: #393e46;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#answers td {
+    width: fit-content;
+    cursor: pointer;
+    /* border: 1px dashed gray; */
+    padding: 10px;
+}
+
+#answers td:hover {
+    color: #006699;
+}
+
+#answers td span {
+    border: 0px solid white;
+    border-radius: 5px;
+}
+
+#controls {
+    display: block;
+    margin-left: 0;
+    padding: 0;
+}
+
+#controls p {
+    margin: 0;
+}
+
+.key {
+    border: 1px solid gray;
+    padding: 0px 3px;
+    border-radius: 2px;
+}

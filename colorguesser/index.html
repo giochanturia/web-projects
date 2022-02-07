@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorguesser</title>
+    <!-- JQUERY and POPPER -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel='icon' href='../giochanturia_favicon.ico' type='image/x-icon'>
+</head>
+<body>
+    <div class="container">
+        <div id="difficulty" class="btn-group btn-group-toggle" data-toggle="buttons">
+            Difficulty:&nbsp;
+            <label class="btn btn-outline-success active">
+              <input type="radio" name="options" id="easy" checked> Easy
+            </label>
+            <label class="btn btn-outline-warning">
+              <input type="radio" name="options" id="norm"> Norm
+            </label>
+            <label class="btn btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Nearly impossible.">
+              <input type="radio" name="options" id="diff"> Hard
+            </label>
+          </div>
+        <hr>
+        <div id="question">
+            Guess the&nbsp;
+            <!-- <button id="color-rgb" class="color" data-toggle="tooltip" data-placement="top" title="Press 'T' to toggle.">COLOR</button>. -->
+            <button id="color-rgb" class="color">COLOR</button>.
+        </div>
+        <div id="pick" data-toggle="tooltip" data-placement="top" title="Click here for a new game.">
+            - - - - -
+        </div>
+        <div id="answers">
+            <table>
+                <tr>
+                    <td class="answer">a. <span id="a">to.</span></td>
+                    <td class="answer">b. <span id="b">be.</span></td>
+                </tr>
+                <tr>
+                    <td class="answer">c. <span id="c">implemented.</span></td>
+                    <td class="answer">d. <span id="d">soon.</span></td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="controls">
+            <p>Press <span class="key">N</span> for a <a href="#" id="newgame">new game</a>.</p>
+            <p>Press <span class="key">T</span> to <a href="#" id="togglemode">toggle the mode</a>.</p>
+            <p>Press <span class="key">1</span>, <span class="key">2</span>, <span class="key">3</span> to change difficulty.</p>
+            <p>Press <span class="key">A</span>, <span class="key">B</span>, <span class="key">C</span> or <span class="key">D</span> to make a choice.</p>
+            <p>Press <span class="key">Ctrl</span>+<span class="key">W</span> to exit.</p>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>

@@ -10,4 +10,5 @@
 - [x] Overall functionality;
 - [ ] Generalize column names (not only `DE` and `EN`);
 - [ ] Add styles for verbs, adjectives, etc;
+- [ ] Add "Download the sample wordlist" button;
 - [ ] Drop `Bootstrap` and define my own stylesheet.
