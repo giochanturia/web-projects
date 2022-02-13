@@ -1,0 +1,63 @@
+.dark-bg {
+    color: var(--color-white);
+}
+
+.light-bg {
+    color: var(--color-black);
+}
+
+/* GC stuff: */
+
+.gc-h {
+    font-family: var(--headings-font);
+    font-weight: bold;
+}
+
+.gc-btn {
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+}
+
+.gc-btn-link {
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.gc-btn-link:hover {
+    background-color: var(--bg-hover);
+}
+
+.gc-btn-link:hover a {
+    color: var(--text-color);
+}
+
+/* Btn color variations: */
+
+.gc-btn-light {
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+.gc-btn-light:hover {
+    background-color: var(--color-white-darker);
+}
+
+.gc-btn-dark {
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+.gc-btn-dark:hover {
+    background-color: var(--color-black-darker);
+}
+
+.gc-btn-purple {
+    color: var(--color-white);
+    background-color: var(--color-purple);
+}
+
+.gc-btn-purple:hover {
+    background-color: var(--color-purple-darker);
+}
+

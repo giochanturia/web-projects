@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'BPG Nino Mkhedruli';
+    src: url('/fonts/bpg-nino-mkhedruli-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/bpg-nino-mkhedruli-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/bpg-nino-mkhedruli-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/bpg-nino-mkhedruli-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/fonts/bpg-nino-mkhedruli-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/bpg-nino-mkhedruli-webfont.svg#bpg_nino_mkhedruliregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'BPG Nino Elite';
+    src: url('/fonts/bpg-nino-elite-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/bpg-nino-elite-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/bpg-nino-elite-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/bpg-nino-elite-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/fonts/bpg-nino-elite-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/bpg-nino-elite-webfont.svg#bpg_nino_eliteregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'BPG Nino Mtavruli';
+    src: url('/fonts/bpg-nino-mtavruli-webfont.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/bpg-nino-mtavruli-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/bpg-nino-mtavruli-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/fonts/bpg-nino-mtavruli-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/fonts/bpg-nino-mtavruli-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/bpg-nino-mtavruli-webfont.svg#bpg_nino_mtavruliregular') format('svg'); /* Legacy iOS */
+}
+
+:root {
+    --color-orange:rgb(238, 163, 0);
+    --color-orange-flashy: rgb(241, 121, 0);
+
+    --color-white: #EEEEEE;
+    --color-white-11: #EEEEEE11;
+    --color-white-darker: #e0e0e0;
+    --color-black: #323232;
+    --color-black-07: #00000007;
+    --color-black-darker: #242424;
+
+    --color-purple: #6a739b;
+    --color-purple-darker: #464b88;
+
+    --font-monospace: monospace;
+    --font-bpg-elite: 'BPG Nino Elite';
+    --font-bpg-mkhedruli: 'BPG Nino Mkhedruli';
+    --font-bpg-mtavruli: 'BPG Nino Mtavruli';
+
+    /* Default is the dark theme: */
+    --main-color: var(--color-orange);
+    --text-color: var(--color-white);
+    --bg-color: var(--color-black);
+    --bg-hover: var(--color-white-11);
+    --main-font: var(--font-monospace);
+    --headings-font: var(--font-monospace);
+}
+
+* {
+    font-family: var(--main-font);
+  }
+
+.dark {
+    --main-color: var(--color-orange);
+    --text-color: var(--color-white);
+    --bg-color: var(--color-black);
+    --bg-hover: var(--color-white-11);
+    --main-font: var(--font-monospace);
+    --headings-font: var(--font-monospace);
+}
+#dark-switch {
+    font-family: var(--font-monospace);
+}
+
+.light {
+    --main-color: var(--color-orange-flashy);
+    --text-color: var(--color-black);
+    --bg-color: var(--color-white);
+    --bg-hover: var(--color-black-07);
+    --main-font: var(--font-monospace);
+    --headings-font: var(--font-monospace);
+}
+#light-switch {
+    font-family: var(--font-monospace);
+}
+
+.nebula {
+    --main-color: var(--color-orange);
+    --text-color: var(--color-white);
+    --bg-color: var(--color-purple);
+    --bg-hover: var(--color-white-11);
+    --main-font: var(--font-bpg-elite);
+    --headings-font: var(--font-bpg-mtavruli);
+}
+#nebula-switch {
+    font-family: var(--font-bpg);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+/* Buttons */
+
+#theme-switch {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+#theme-buttons {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    width: 0%;
+    transition: width .5s ease-out;
+}
+
+#theme-switch:hover #theme-buttons {
+    width: 100%;
+}
+
+#theme-buttons * {
+    margin-left: 10px;
+}

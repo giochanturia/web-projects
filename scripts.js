@@ -1,5 +1,5 @@
 var canvas = document.getElementById('thermal');
-var testdiv = document.getElementById('testdiv');
+var tempdiv = document.getElementById('tempdiv');
 
 thermal_image = new Image();
 thermal_image.src = 'giochanturia_square.png';
@@ -23,15 +23,17 @@ canvas.addEventListener('mousemove', function(e) {
     var x = e.clientX - canvasOffset.left;
     var y = e.clientY - canvasOffset.top;
     var p = context.getImageData(x, y, 1, 1).data;
-    testdiv.style.backgroundColor = "rgb("+String(p[0])+", "+String(p[1])+", "+String(p[2])+")";
+    tempdiv.style.backgroundColor = "rgb("+String(p[0])+", "+String(p[1])+", "+String(p[2])+")";
     var t = rgb_to_temp(p[0], p[1], p[2]);
     var t_s = String(t);
     if((10*t)%10==0) t_s = t_s+".0";
-    testdiv.innerHTML = t_s+"°C";
+    tempdiv.innerHTML = t_s+"°C";
     if(t>=28.0) {
-        testdiv.classList.add("light-bg");
+        tempdiv.classList.add("light-bg");
+        tempdiv.classList.remove("dark-bg");
     } else {
-        testdiv.classList.remove("light-bg");
+        tempdiv.classList.add("dark-bg");
+        tempdiv.classList.remove("light-bg");
     }
 });
 
