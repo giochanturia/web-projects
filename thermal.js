@@ -2,7 +2,7 @@ var canvas = document.getElementById('thermal');
 var tempdiv = document.getElementById('tempdiv');
 
 thermal_image = new Image();
-thermal_image.src = 'giochanturia_square.png';
+thermal_image.src = '/media/giochanturia_square.png';
 
 thermal_image.onload = function(){
     canvas.setAttribute("width", String(thermal_image.width)+"px");
