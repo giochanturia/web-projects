@@ -52,6 +52,7 @@
     /* Default is the dark theme: */
     --main-color: var(--color-orange);
     --text-color: var(--color-white);
+    --text-color-lighter: var(--white-darker);
     --bg-color: var(--color-black);
     --bg-hover: var(--color-white-11);
     --main-font: var(--font-monospace);
@@ -65,6 +66,7 @@
 .dark {
     --main-color: var(--color-orange);
     --text-color: var(--color-white);
+    --text-color-lighter: var(--white-darker);
     --bg-color: var(--color-black);
     --bg-hover: var(--color-white-11);
     --main-font: var(--font-monospace);
@@ -77,6 +79,7 @@
 .light {
     --main-color: var(--color-orange-flashy);
     --text-color: var(--color-black);
+    --text-color-lighter: var(--color-black-darker);
     --bg-color: var(--color-white);
     --bg-hover: var(--color-black-07);
     --main-font: var(--font-monospace);
@@ -89,6 +92,7 @@
 .nebula {
     --main-color: var(--color-orange);
     --text-color: var(--color-white);
+    --text-color-lighter: var(--white-darker);
     --bg-color: var(--color-purple);
     --bg-hover: var(--color-white-11);
     --main-font: var(--font-bpg-elite);
@@ -109,9 +113,16 @@ body {
 #theme-switch {
     display: flex;
     flex-direction: row;
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     left: 20px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 #theme-buttons {
