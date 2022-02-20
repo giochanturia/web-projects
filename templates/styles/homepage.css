@@ -1,10 +1,12 @@
 a {
     text-decoration: none;
     color: var(--text-color);
+    border-bottom: 1px solid rgba(120,120,120,.3);
 }
 
 a:hover {
     color: var(--main-color);
+    border-bottom: 1px solid rgba(120,120,120,.5);
 }
 
 hr {

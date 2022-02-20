@@ -60,12 +60,17 @@
 
 .language-flag {
     border-radius: 4px;
-    margin-right: 5px;
+    margin-right: 1em;
 }
 
 .mini-logo {
     display: none;
     width: 2ex;
+}
+
+.mini-img {
+    height: 30px;
+    margin-right: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
