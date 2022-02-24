@@ -125,6 +125,13 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+#theme-label {
+    border-radius: 3px;
+    padding: 5px;
+    background: var(--bg-color);
+    border: 1px solid rgba(120,120,120,.33);
+}
+
 #theme-buttons {
     display: flex;
     flex-direction: row;

@@ -21,10 +21,13 @@
 
 .gc-btn-link {
     padding: 13px;
+    margin: 2px;
+    border: none;
     border-radius: 5px;
 }
 
 .gc-btn-link:hover {
+    border: none;
     background-color: var(--bg-hover);
 }
 
