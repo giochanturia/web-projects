@@ -24,6 +24,7 @@ and you'll be fine.
 - [ ] Project: `notes`;
 - [ ] Project: `math-problem-generator`;
 - [ ] Project: `first-republic-of-georgia`;
+- [ ] Project: `codex-editor`;
 - [x] Implement themes globally;
 - [ ] Implement breadcrumbs;
 - [ ] Implement READMEs in the footer;

@@ -27,11 +27,11 @@ var hours = Math.floor((distance % (days_unit)) / (hours_unit));
 var minutes = Math.floor((distance % (hours_unit)) / (minutes_unit));
 var seconds = Math.floor((distance % (minutes_unit)) / seconds_unit);
 
-var years_text = (years > 1) ? " years, " : " year, ";
-var days_text = (days > 1) ? " days, " : " day, ";
-var hours_text = (hours > 1) ? " hours, " : " hour, ";
-var minutes_text = (minutes > 1) ? " minutes, " : " minute, ";
-var seconds_text = (seconds > 1) ? " seconds" : " second";
+var years_text = (years != 1) ? " years, " : " year, ";
+var days_text = (days != 1) ? " days, " : " day, ";
+var hours_text = (hours != 1) ? " hours, " : " hour, ";
+var minutes_text = (minutes != 1) ? " minutes, " : " minute, ";
+var seconds_text = (seconds != 1) ? " seconds" : " second";
 
 // Display the result in the element with id="demo"
 document.getElementById("exactage").innerHTML = years + years_text

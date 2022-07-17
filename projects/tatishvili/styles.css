@@ -1,0 +1,89 @@
+:root {
+    --highlight-1:#EB4747;
+    --highlight-2:#FF8B8B;
+    --highlight-3:#FFDEDE;
+    /* --highlight-1:#495C83;
+    --highlight-2:#7A86B6;
+    --highlight-3:#A8A4CE; */
+    /* --highlight-1:#937DC2;
+    --highlight-2:#C689C6;
+    --highlight-3:#E8A0BF; */
+    --highlight-t:white;
+    --neutral-1:black;
+    --neutral-2:gray;
+    --neutral-3:lightgray;
+}
+
+.container {
+    width: 800px;
+    margin:auto;
+}
+
+#diagram-container {
+    text-align: center;
+}
+
+#diagram {
+    /* border: 2px solid lightgray; */
+    border-radius: 15px;
+}
+
+.source {
+    fill: gray;
+    stroke: gray;
+}
+
+.wire {
+    stroke: gray;
+}
+
+.resistor {
+    stroke: var(--neutral-2);
+    fill: var(--neutral-3);
+}
+
+.resistor:hover {
+    stroke: var(--highlight-1);
+    fill: var(--highlight-2);
+    cursor: pointer;
+}
+
+#r { /* Total resistance */
+    fill-opacity: 0.25;
+    stroke-dasharray: 3;
+}
+
+.resistor-label {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color:gray;
+    font-family:Times;
+    font-size:16px;
+}
+
+.resistor:hover .resistor-label {
+    color: white;
+}
+
+#r:hover .resistor-label {
+    color: var(--highlight-1);
+}
+
+.unknown {
+    stroke: var(--highlight-1);
+    fill: var(--highlight-2);
+}
+
+.unknown .resistor-label {
+    color: var(--highlight-t);
+}
+
+#r.unknown .resistor-label {
+    color: var(--highlight-1);
+}
+
+#answer-text {
+    color:gray;
+}
