@@ -2,16 +2,55 @@
     --highlight-1:#EB4747;
     --highlight-2:#FF8B8B;
     --highlight-3:#FFDEDE;
-    /* --highlight-1:#495C83;
-    --highlight-2:#7A86B6;
-    --highlight-3:#A8A4CE; */
-    /* --highlight-1:#937DC2;
-    --highlight-2:#C689C6;
-    --highlight-3:#E8A0BF; */
     --highlight-t:white;
     --neutral-1:black;
     --neutral-2:gray;
     --neutral-3:lightgray;
+}
+
+body {
+    margin-top:20px;
+}
+
+.theme-red {
+    --highlight-1:#EB4747;
+    --highlight-2:#FF8B8B;
+    --highlight-3:#FFDEDE;
+}
+
+.theme-blue {
+    --highlight-1:#495C83;
+    --highlight-2:#7A86B6;
+    --highlight-3:#A8A4CE;
+}
+
+.theme-green {
+    --highlight-1:#9EB23B;
+    --highlight-2:#C7D36F;
+    --highlight-3:#FCF9C6;
+}
+
+.theme-purple {
+    --highlight-1:#937DC2;
+    --highlight-2:#C689C6;
+    --highlight-3:#E8A0BF;
+}
+
+.theme-orange {
+    --highlight-1:#DF711B;
+    --highlight-2:#FFB740;
+    --highlight-3:#FDE49C;
+}
+
+.theme-gray {
+    --highlight-1:#082032;
+    --highlight-2:gray;
+    --highlight-3:lightgray;
+}
+
+h4 {
+    display: flex;
+    align-items: left;
 }
 
 .container {
@@ -19,12 +58,20 @@
     margin:auto;
 }
 
+.problem {
+    border-top: 1px dashed gray;
+}
+
 #diagram-container {
     text-align: center;
 }
 
+#change-numbers {
+    margin-left: 10px;
+}
+
 #diagram {
-    /* border: 2px solid lightgray; */
+    border: 2px solid lightgray;
     border-radius: 15px;
 }
 
@@ -81,6 +128,14 @@
 }
 
 #r.unknown .resistor-label {
+    color: var(--highlight-1);
+}
+
+#problem-text {
+    color:black;
+}
+
+#problem-question {
     color: var(--highlight-1);
 }
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ამოცანები</title>
+    <!-- JQUERY and POPPER -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel='icon' href='../giochanturia_favicon.ico' type='image/x-icon'>
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- MathJax -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body class="theme-orange">
+    <div id="controls" class="container">
+        ქვიზის ფერი:
+        <button style="color:#EB4747;" onclick="set_theme('theme-red')">წითელი</button>
+        <button style="color:#DF711B;" onclick="set_theme('theme-orange')">ნარინჯისფერი</button>
+        <button style="color:#9EB23B;" onclick="set_theme('theme-green')">მწვანე</button>
+        <button style="color:#495C83;" onclick="set_theme('theme-blue')">ლურჯი</button>
+        <button style="color:#937DC2;" onclick="set_theme('theme-purple')">იისფერი</button>
+        <button style="color:#082032;" onclick="set_theme('theme-gray')">შავ-თეთრი</button>
+        <hr>
+    </div>
+    <div id="problems" class="container">
+        <h1>ქვიზი</h1>
+    </div>
+
+    <!-- <div id="add-problems" class="container">
+        <a href="#">ამოცანის დამატება</a>
+    </div> -->
+
+    <div id="footer" class="container" style="color:lightgray;">
+        <hr>
+        დასამატებელი ფუნქციები:
+        <ol>
+            <li>ამოცანების დამატება/წაშლა;</li>
+            <li>პასუხების გამოჩენა/დაფარვა;</li>
+            <li>რიცხვების შერჩევა ხელით (და არა ავტომატურად);</li>
+            <li>სირთულის მაჩვენებელი ამოცანაზე;</li>
+            <li>ამოცანის ქულა (სირთულის მიხედვით, სავარაუდოდ);</li>
+            <li>ბეჭდვის ფუნქცია.</li>
+            <li>სხვა ტიპის ამოცანები (მაგალითად, ომის კანონის გამოყენების დამატება)...</li>
+        </ol>
+    </div>
+
+<script src="generate_problems.js"></script>
+
+</html>
