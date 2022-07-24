@@ -3,6 +3,8 @@
     --highlight-2:#FF8B8B;
     --highlight-3:#FFDEDE;
     --highlight-t:white;
+    --link-color: darkorange;
+    --link-hover: rgb(255, 60, 0);
     --neutral-1:black;
     --neutral-2:gray;
     --neutral-3:lightgray;
@@ -10,6 +12,11 @@
 
 body {
     margin-top:20px;
+}
+
+.container {
+    width: min(800px,100%);
+    margin: auto;
 }
 
 .theme-red {
@@ -48,14 +55,65 @@ body {
     --highlight-3:lightgray;
 }
 
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--link-hover);
+}
+
+.bi {
+    margin:0px;
+    margin-right: .5em;
+}
+
+#subject-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subject-link {
+    display:flex;
+    text-decoration: none;
+    padding: 23px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #18181810;
+}
+
+.subject-link.selected {
+    background-color: #ff990020;
+    border: 3px solid var(--link-color);
+}
+
+.subject-link:hover {
+    border: none;
+    background-color: #08203220;
+}
+
+.subject-link.selected:hover {
+    background-color: #ff990030;
+    border: 3px dashed var(--link-hover);
+}
+
+.passive {
+    filter: saturate(0%);
+    color:lightgray;
+}
+
+.passive:hover {
+    color:lightgray;
+    cursor:default;
+}
+
 h4 {
     display: flex;
     align-items: left;
-}
-
-.container {
-    width: 800px;
-    margin:auto;
 }
 
 .problem {

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ამოცანები</title>
+    <!-- JQUERY and POPPER -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel='icon' href='../giochanturia_favicon.ico' type='image/x-icon'>
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- MathJax -->
+    <script>
+        MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body class="theme-orange">
+    
+    <div class="container">
+        <h1>ამოცანების გენერატორის პროტოტიპი</h1>
+        <hr>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">გენერატორი</a></li>
+              <li class="breadcrumb-item active" aria-current="page">მასწავლებლობა</li>
+            </ol>
+          </nav>
+        
+          
+    <h4>აუცილებლად მასწავლებლის სტატუსი უნდა მქონდეს, რომ ამოცანა დავამატო?</h4>
+    <p>არა! ჩვენთან მასწავლებლად ითვლება ყველა ის, ვინც სხვას ასწავლის. მთავარია მონდომება, კარგი ამოცანა და ქვემოთ მოცემული ნაბიჯების გადადგმა.</p>
+
+    <hr>
+
+    <h4>როგორ უნდა დავამატო ამოცანა?</h4>
+    <p>ამოცანის დამატება ხდება <a href="#">ამ გვერდიდან</a>.</p>
+    <h5>1. თემ(ებ)ის არჩევა:</h5>
+    <p>"ნებულაზე" ამოცანები იყოფა <b>საგნებად</b>, <b>კატეგორიებად</b> და <b>თემებად</b>.
+        ცხადია, ერთი ამოცანა შეიძლება შეესაბამებოდეს რამდენიმე თემასაც (მაგალითად, ამოცანის ამოსახსნელად შეიძლება გვჭირდებოდეს <a href="#">პითაგორას თეორემაც</a> და <a href="#">სამკუთხედის ფართობის გამოსათვლელი ფორმულაც</a>).
+        პირველ რიგში, ვირჩევთ შესაბამის თემებს.
+    </p>
+    <h5>2. არსებული ამოცანების გადახედვა:</h5>
+    <p>პირველი ეტაპის გავლის შემდეგ ჩვენი ვებ-გვერდი შემოგთავაზებთ არჩეული თემების ირგვლივ არსებული ამოცანების სიას.
+        თუ აღმოჩნდა, რომ თქვენ მიერ ჩაფიქრებული ამოცანა უკვე არის ჩვენს კრებულში, დიდად სავარაუდოა, რომ ჩვენი გუნდი მას ხელმეორედ არ ჩაამატებს.</p>
+
+    <h5>3. ამოცანის პირობის და ამოხსნის ატვირთვა:</h5>
+    <p>ამოცანის განსახილველად ჩვენს ჯგუფს სჭირდება როგორც ამოცანის პირობა, ასევე, მისი ამოხსნა (სრულად), ყველა საჭირო ნახაზი, დიაგრამა, ცხრილი, ა.შ.
+        ამოცანის შედგენის შესახებ დეტალურად <a href="#">წაიკითხავთ აქ</a>.
+    </p>
+
+    <h5>4. გაგზავნა:</h5>
+    <p>როცა ამოცანა მზადაა, ვაჭერთ "გაგზავნას" და ველოდებით პასუხს ჩვენი ჯგუფისგან.</p> 
+
+    <hr>
+
+    <h4>რა დრო სჭირდება ამოცანის დამატებას?</h4>
+    <p>ჩვენი გუნდი ყოველთვის ცდილობს, მაქსიმალურად სწრაფად განიხილოს შემოთავაზებული ამოცანები. თუ გგონიათ, რომ თქვენი ამოცანა გადაგვავიწყდა, <a href="#">შეგვახსენეთ</a>.</p>
+
+    </div>
+
+
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger : 'hover'
+        })
+    })
+    </script>
+
+</html>

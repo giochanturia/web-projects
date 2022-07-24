@@ -8,8 +8,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <!-- BOOTSTRAP -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Bootstrap icons: -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- STYLES -->
     <link rel="stylesheet" href="styles.css">
     <link rel='icon' href='../giochanturia_favicon.ico' type='image/x-icon'>
@@ -29,38 +31,44 @@
 </head>
 
 <body class="theme-orange">
-    <div id="controls" class="container">
-        ქვიზის ფერი:
-        <button style="color:#EB4747;" onclick="set_theme('theme-red')">წითელი</button>
-        <button style="color:#DF711B;" onclick="set_theme('theme-orange')">ნარინჯისფერი</button>
-        <button style="color:#9EB23B;" onclick="set_theme('theme-green')">მწვანე</button>
-        <button style="color:#495C83;" onclick="set_theme('theme-blue')">ლურჯი</button>
-        <button style="color:#937DC2;" onclick="set_theme('theme-purple')">იისფერი</button>
-        <button style="color:#082032;" onclick="set_theme('theme-gray')">შავ-თეთრი</button>
+    
+    <div class="container">
+        <h1>ამოცანების გენერატორის პროტოტიპი</h1>
         <hr>
-    </div>
-    <div id="problems" class="container">
-        <h1>ქვიზი</h1>
-    </div>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">საგნები</li>
+            </ol>
+          </nav>
 
-    <!-- <div id="add-problems" class="container">
-        <a href="#">ამოცანის დამატება</a>
-    </div> -->
+        <div id="subject-navigation">
+            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="საგანი მალე დაგვემატება"><i class="bi bi-stickies"></i> მათემატიკა</a>
+            <a href="physics.html" class="subject-link"><i class="bi bi-airplane-engines"></i> ფიზიკა</a>
+            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="საგანი მალე დაგვემატება"><i class="bi bi-stickies"></i> ქიმია</a>
+            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="საგანი მალე დაგვემატება"><i class="bi bi-stickies"></i> ბიოლოგია</a>
+            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="საგანი მალე დაგვემატება"><i class="bi bi-stickies"></i> ისტორია</a>
+            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="საგანი მალე დაგვემატება"><i class="bi bi-stickies"></i> გეოგრაფია</a>
+            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="საგანი მალე დაგვემატება"><i class="bi bi-stickies"></i> ქართული ენა და ლიტერატურა</a>
+            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="საგანი მალე დაგვემატება"><i class="bi bi-stickies"></i> ინგლისური ენა</a>
+        </div>
 
-    <div id="footer" class="container" style="color:lightgray;">
         <hr>
-        დასამატებელი ფუნქციები:
-        <ol>
-            <li>ამოცანების დამატება/წაშლა;</li>
-            <li>პასუხების გამოჩენა/დაფარვა;</li>
-            <li>რიცხვების შერჩევა ხელით (და არა ავტომატურად);</li>
-            <li>სირთულის მაჩვენებელი ამოცანაზე;</li>
-            <li>ამოცანის ქულა (სირთულის მიხედვით, სავარაუდოდ);</li>
-            <li>ბეჭდვის ფუნქცია.</li>
-            <li>სხვა ტიპის ამოცანები (მაგალითად, ომის კანონის გამოყენების დამატება)...</li>
-        </ol>
+
+        <div id="subject-navigation">
+            <a href="teachers.html" class="subject-link"><i class="bi bi-mortarboard"></i> მასწავლებლებისთვის</a>
+            <a href="authors.html" class="subject-link"><i class="bi bi-pen"></i> წიგნის ავტორებისთვის</a>
+        </div>
+
+
     </div>
 
-<script src="generate_problems.js"></script>
+
+    <script>
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            trigger : 'hover'
+        })
+    })
+    </script>
 
 </html>

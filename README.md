@@ -8,7 +8,7 @@ Most projects need a simple HTTP server. Just run
 
 ```python3 -m http.server 8000```
 
-and you'll be fine.
+and you'll be fine (oh, and install Python before, of course).
 
 <hr>
 
