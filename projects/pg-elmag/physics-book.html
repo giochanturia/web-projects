@@ -41,26 +41,31 @@
               <li class="breadcrumb-item active" aria-current="page">{წიგნის ავტორები დაფარულია ამ ეტაპზე}</li>
             </ol>
           </nav>
+
+          <div style="display:flex; justify-content: center;">
+            <span class="subject-link" id="select-all">ყველას მონიშვნა</span>
+            <span class="subject-link" id="deselect-all">მონიშვნის გაუქმება</span>
+          </div>
+          <hr>
         
           <div id="subject-navigation">
-            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="წინა თავები მალე დაგვემატება">... წინა თავები</a>
-            <a href="#" class="subject-link">3.1. დენი, დენის წყაროები</a>
-            <a href="#" class="subject-link">3.2. დენის ძალა</a>
-            <a href="#" class="subject-link">3.3. დენი ლითონის გამტარში</a>
-            <a href="#" class="subject-link">3.4. ომის კანონი წრედის უბნისთვის</a>
-            <a href="#" class="subject-link">3.5. წინაღობა</a>
-            <a href="#" class="subject-link">3.6. ზეგამტარობა</a>
-            <a href="#" class="subject-link selected">3.7. პრაქტიკული სამუშაო #1: გამტართა შეერთება მიმდევრობით</a>
-            <a href="#" class="subject-link selected">3.8. პრაქტიკული სამუშაო #2: გამტართა შეერთება პარალელურად</a>
-            <a href="#" class="subject-link">3.9. ფიზიკა ამოცანებში</a>
-            <a href="#" class="subject-link">3.10. მუშაობა და სიმძლავრე</a>
-            <a href="#" class="subject-link">3.11. ჯოულ-ლენცის კანონი</a>
-            <a href="#" class="subject-link">3.12. ფიზიკა ამოცანებში</a>
-            <a href="#" class="subject-link">3.13. ემძ</a>
-            <a href="#" class="subject-link">3.14. ფიზიკა ამოცანებში</a>
-            <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="შემდეგი თავები მალე დაგვემატება">შემდეგი თავები ...</a>
+            <span class="subject-link passive" data-toggle="tooltip" data-placement="top" title="წინა თავები მალე დაგვემატება">... წინა თავები</span>
+            <span class="subject-link topic-link">3.1. დენი, დენის წყაროები</span>
+            <span class="subject-link topic-link">3.2. დენის ძალა</span>
+            <span class="subject-link topic-link">3.3. დენი ლითონის გამტარში</span>
+            <span class="subject-link topic-link">3.4. ომის კანონი წრედის უბნისთვის</span>
+            <span class="subject-link topic-link">3.5. წინაღობა</span>
+            <span class="subject-link topic-link">3.6. ზეგამტარობა</span>
+            <span class="subject-link topic-link selected">3.7. პრაქტიკული სამუშაო #1: გამტართა შეერთება მიმდევრობით</span>
+            <span class="subject-link topic-link selected">3.8. პრაქტიკული სამუშაო #2: გამტართა შეერთება პარალელურად</span>
+            <span class="subject-link topic-link">3.9. ფიზიკა ამოცანებში</span>
+            <span class="subject-link topic-link">3.10. მუშაობა და სიმძლავრე</span>
+            <span class="subject-link topic-link">3.11. ჯოულ-ლენცის კანონი</span>
+            <span class="subject-link topic-link">3.12. ფიზიკა ამოცანებში</span>
+            <span class="subject-link topic-link">3.13. ემძ</span>
+            <span class="subject-link topic-link">3.14. ფიზიკა ამოცანებში</span>
+            <span class="subject-link passive" data-toggle="tooltip" data-placement="top" title="შემდეგი თავები მალე დაგვემატება">შემდეგი თავები ...</span>
             </div>
-
 
     </div>
 
@@ -72,5 +77,7 @@
         })
     })
     </script>
+
+    <script src="select_topics.js"></script>
 
 </html>

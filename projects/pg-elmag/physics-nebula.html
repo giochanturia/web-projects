@@ -41,111 +41,115 @@
               <li class="breadcrumb-item active" aria-current="page">ჩვენი კრებული</li>
             </ol>
           </nav>
+
+          <div style="display:flex; justify-content: center;">
+            <span class="subject-link" id="select-all">ყველას მონიშვნა</span>
+            <span class="subject-link" id="deselect-all">მონიშვნის გაუქმება</span>
+          </div>
+          <hr>
         
           <center><h3>მექანიკა</h3></center>
           <div id="subject-navigation">
-            <!-- <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="წინა თავები მალე დაგვემატება">... წინა თავები</a> -->
-            <a href="#" class="subject-link">1.1. ვექტორები და სკალარები</a>
-            <a href="#" class="subject-link">1.2. ვექტორული ჯამი</a>
-            <a href="#" class="subject-link">1.3. ვექტორის კომპონენტები</a>
-            <a href="#" class="subject-link">2.1. გავლილი მანძილი vs გადაადგილება</a>
-            <a href="#" class="subject-link">2.2. საშუალო სიჩქარე და სისწრაფე</a>
-            <a href="#" class="subject-link">2.3. ათვლის სისტემები</a>
-            <a href="#" class="subject-link">2.4. აჩქარება</a>
-            <a href="#" class="subject-link">2.5. კიდევ ერთი ფორმულა მუდმივი აჩქარებისთვის</a>
-            <a href="#" class="subject-link">3.1. მოძრაობის სახეები</a>
-            <a href="#" class="subject-link">3.2. მოძრაობის სახეები მათემატიკურად</a>
-            <a href="#" class="subject-link">3.3. კუთხით გასროლილი სხეული</a>
-            <a href="#" class="subject-link">3.4. წრიული მოძრაობა 1</a>
-            <a href="#" class="subject-link">3.5. წრიული მოძრაობა 2</a>
-            <a href="#" class="subject-link">3.6. მოძრაობის სახეები: გრაფიკები</a>
-            <a href="#" class="subject-link">4.1. ნიუტონის პირველი კანონი</a>
-            <a href="#" class="subject-link">4.2. ნიუტონის მეორე კანონი</a>
-            <a href="#" class="subject-link">4.3. ნიუტონის მეორე კანონის მაგალითი</a>
-            <a href="#" class="subject-link">4.4. ნიუტონის მეორე კანონის კიდევ ერთი მაგალითი</a>
-            <a href="#" class="subject-link">5.1. გრავიტაცია</a>
-            <a href="#" class="subject-link">5.2. R კვადრატის უკუპროპორციულობა გრავიტაციაში</a>
-            <a href="#" class="subject-link">5.3. გრავიტაციის მაგალითები</a>
-            <a href="#" class="subject-link">5.4. გრავიტაცია და ნიუტონის მეორე კანონი</a>
-            <a href="#" class="subject-link">5.5. ხახუნის ძალა</a>
-            <a href="#" class="subject-link">5.6. დრეკადობის ძალა</a>
-            <a href="#" class="subject-link">5.7. ნიუტონის მესამე კანონი</a>
-            <a href="#" class="subject-link">6.1. ძალის მომენტი</a>
-            <a href="#" class="subject-link">6.2. ძალის მომენტის განზოგადება</a>
-            <a href="#" class="subject-link">6.3. ჭოჭონაქები 1</a>
-            <a href="#" class="subject-link">6.4. ჭოჭონაქები 2</a>
-            <a href="#" class="subject-link">7.1. იმპულსი</a>
-            <a href="#" class="subject-link">7.2. იმპულსის შენახვა</a>
-            <a href="#" class="subject-link">7.3. იმპულსი: საინტერესო შემთხვევები</a>
-            <a href="#" class="subject-link">7.4. ელასტიური და არაელასტიური დაჯახებები</a>
-            <a href="#" class="subject-link">8.1. ენერგია და მუშაობა</a>
-            <a href="#" class="subject-link">8.2. კინეტიკური ენერგია</a>
-            <a href="#" class="subject-link">8.3. პოტენციური ენერგია</a>
-            <a href="#" class="subject-link">8.4. ელასტიური პოტენციური ენერგია</a>
-            <a href="#" class="subject-link">8.5. სიმძლავრე</a>
-            <a href="#" class="subject-link">8.6. მარგი ქმედების კოეფიციენტი</a>
-            <a href="#" class="subject-link">9.1. პერიოდული მოძრაობა</a>
-            <a href="#" class="subject-link">9.2. მათემატიკური ქანქარა და ზამბარა 1</a>
-            <a href="#" class="subject-link">9.3. მათემატიკური ქანქარა და ზამბარა 2</a>
-            <!-- <a href="#" class="subject-link passive" data-toggle="tooltip" data-placement="top" title="შემდეგი თავები მალე დაგვემატება">შემდეგი თავები ...</a> -->
+            <span class="subject-link topic-link">1.1. ვექტორები და სკალარები</span>
+            <span class="subject-link topic-link">1.2. ვექტორული ჯამი</span>
+            <span class="subject-link topic-link">1.3. ვექტორის კომპონენტები</span>
+            <span class="subject-link topic-link">2.1. გავლილი მანძილი vs გადაადგილება</span>
+            <span class="subject-link topic-link">2.2. საშუალო სიჩქარე და სისწრაფე</span>
+            <span class="subject-link topic-link">2.3. ათვლის სისტემები</span>
+            <span class="subject-link topic-link">2.4. აჩქარება</span>
+            <span class="subject-link topic-link">2.5. კიდევ ერთი ფორმულა მუდმივი აჩქარებისთვის</span>
+            <span class="subject-link topic-link">3.1. მოძრაობის სახეები</span>
+            <span class="subject-link topic-link">3.2. მოძრაობის სახეები მათემატიკურად</span>
+            <span class="subject-link topic-link">3.3. კუთხით გასროლილი სხეული</span>
+            <span class="subject-link topic-link">3.4. წრიული მოძრაობა 1</span>
+            <span class="subject-link topic-link">3.5. წრიული მოძრაობა 2</span>
+            <span class="subject-link topic-link">3.6. მოძრაობის სახეები: გრაფიკები</span>
+            <span class="subject-link topic-link">4.1. ნიუტონის პირველი კანონი</span>
+            <span class="subject-link topic-link">4.2. ნიუტონის მეორე კანონი</span>
+            <span class="subject-link topic-link">4.3. ნიუტონის მეორე კანონის მაგალითი</span>
+            <span class="subject-link topic-link">4.4. ნიუტონის მეორე კანონის კიდევ ერთი მაგალითი</span>
+            <span class="subject-link topic-link">5.1. გრავიტაცია</span>
+            <span class="subject-link topic-link">5.2. R კვადრატის უკუპროპორციულობა გრავიტაციაში</span>
+            <span class="subject-link topic-link">5.3. გრავიტაციის მაგალითები</span>
+            <span class="subject-link topic-link">5.4. გრავიტაცია და ნიუტონის მეორე კანონი</span>
+            <span class="subject-link topic-link">5.5. ხახუნის ძალა</span>
+            <span class="subject-link topic-link">5.6. დრეკადობის ძალა</span>
+            <span class="subject-link topic-link">5.7. ნიუტონის მესამე კანონი</span>
+            <span class="subject-link topic-link">6.1. ძალის მომენტი</span>
+            <span class="subject-link topic-link">6.2. ძალის მომენტის განზოგადება</span>
+            <span class="subject-link topic-link">6.3. ჭოჭონაქები 1</span>
+            <span class="subject-link topic-link">6.4. ჭოჭონაქები 2</span>
+            <span class="subject-link topic-link">7.1. იმპულსი</span>
+            <span class="subject-link topic-link">7.2. იმპულსის შენახვა</span>
+            <span class="subject-link topic-link">7.3. იმპულსი: საინტერესო შემთხვევები</span>
+            <span class="subject-link topic-link">7.4. ელასტიური და არაელასტიური დაჯახებები</span>
+            <span class="subject-link topic-link">8.1. ენერგია და მუშაობა</span>
+            <span class="subject-link topic-link">8.2. კინეტიკური ენერგია</span>
+            <span class="subject-link topic-link">8.3. პოტენციური ენერგია</span>
+            <span class="subject-link topic-link">8.4. ელასტიური პოტენციური ენერგია</span>
+            <span class="subject-link topic-link">8.5. სიმძლავრე</span>
+            <span class="subject-link topic-link">8.6. მარგი ქმედების კოეფიციენტი</span>
+            <span class="subject-link topic-link">9.1. პერიოდული მოძრაობა</span>
+            <span class="subject-link topic-link">9.2. მათემატიკური ქანქარა და ზამბარა 1</span>
+            <span class="subject-link topic-link">9.3. მათემატიკური ქანქარა და ზამბარა 2</span>
             </div>
 
             <hr>
             <center><h3>თერმოდინამიკა</h3></center>
           <div id="subject-navigation">
-            <a href="#" class="subject-link">10.1. აგრეგატული მდგომარეობები, ბრაუნის მოძრაობა</a>
-            <a href="#" class="subject-link">10.2. გადასვლები აგრეგატულ მდგომარეობებს შორის</a>
-            <a href="#" class="subject-link">10.3. გადასვლები აგრეგატულ მდგომარეობებს შორის (შეჯამება)</a>
-            <a href="#" class="subject-link">11.1. სიმკვრივე</a>
-            <a href="#" class="subject-link">11.2. წნევა</a>
-            <a href="#" class="subject-link">11.3. სითხის წნევის სიღრმეზე დამოკიდებულება</a>
-            <a href="#" class="subject-link">11.4. ზიარჭურჭელი, ჰიდრავლიკური წნეხი</a>
-            <a href="#" class="subject-link">11.5. ტორიჩელის ცდა</a>
-            <a href="#" class="subject-link">11.6-8. არქიმედეს ძალა</a>
-            <a href="#" class="subject-link">12.1. ტემპერატურა</a>
-            <a href="#" class="subject-link">12.2. ტემპერატურის შკალები</a>
-            <a href="#" class="subject-link">12.3. შინაგანი ენერგია</a>
-            <a href="#" class="subject-link">12.4. კუთრი სითბოტევადობა</a>
-            <a href="#" class="subject-link">12.5. კუთრი სითბო</a>
-            <a href="#" class="subject-link">13.1. ნივთიერების რაოდენობა</a>
-            <a href="#" class="subject-link">13.2. იდეალური აირის განტოლება</a>
-            <a href="#" class="subject-link">13.3. აირის მიერ შესრულებული მუშაობა</a>
+            <span class="subject-link topic-link">10.1. აგრეგატული მდგომარეობები, ბრაუნის მოძრაობა</span>
+            <span class="subject-link topic-link">10.2. გადასვლები აგრეგატულ მდგომარეობებს შორის</span>
+            <span class="subject-link topic-link">10.3. გადასვლები აგრეგატულ მდგომარეობებს შორის (შეჯამება)</span>
+            <span class="subject-link topic-link">11.1. სიმკვრივე</span>
+            <span class="subject-link topic-link">11.2. წნევა</span>
+            <span class="subject-link topic-link">11.3. სითხის წნევის სიღრმეზე დამოკიდებულება</span>
+            <span class="subject-link topic-link">11.4. ზიარჭურჭელი, ჰიდრავლიკური წნეხი</span>
+            <span class="subject-link topic-link">11.5. ტორიჩელის ცდა</span>
+            <span class="subject-link topic-link">11.6-8. არქიმედეს ძალა</span>
+            <span class="subject-link topic-link">12.1. ტემპერატურა</span>
+            <span class="subject-link topic-link">12.2. ტემპერატურის შკალები</span>
+            <span class="subject-link topic-link">12.3. შინაგანი ენერგია</span>
+            <span class="subject-link topic-link">12.4. კუთრი სითბოტევადობა</span>
+            <span class="subject-link topic-link">12.5. კუთრი სითბო</span>
+            <span class="subject-link topic-link">13.1. ნივთიერების რაოდენობა</span>
+            <span class="subject-link topic-link">13.2. იდეალური აირის განტოლება</span>
+            <span class="subject-link topic-link">13.3. აირის მიერ შესრულებული მუშაობა</span>
             </div>
 
             <hr>
             <center><h3>ელექტრომაგნეტიზმი</h3></center>
           <div id="subject-navigation">
-            <a href="#" class="subject-link">14.1. მუხტი</a>
-            <a href="#" class="subject-link">14.2. კულონის ძალა</a>
-            <a href="#" class="subject-link">14.3. ელექტრული ველი</a>
-            <a href="#" class="subject-link">15.1. ელექტრული პოტენციური ენერგია</a>
-            <a href="#" class="subject-link">15.2. ელექტრული პოტენციალი</a>
-            <a href="#" class="subject-link">15.3. შეჯამება: ელექტრული ძალა, ველი, პოტენციური ენერგია და პოტენციალი</a>
-            <a href="#" class="subject-link">16.1. ძაბვა</a>
-            <a href="#" class="subject-link">16.2. ტევადობა</a>
-            <a href="#" class="subject-link">16.3. დენი(ს ძალა)</a>
-            <a href="#" class="subject-link">16.4. წინაღობა</a>
-            <a href="#" class="subject-link">17.1. ელექტრული წრედი</a>
-            <a href="#" class="subject-link">17.2. კონდენსატორების შეერთება პარალელურად და მიმდევრობით</a>
-            <a href="#" class="subject-link">17.3. რეზისტორების შეერთება მიმდევრობით და პარალელურად</a>
-            <a href="#" class="subject-link">17.4. “ნესვის” ფორმულა</a>
-            <a href="#" class="subject-link">17.5. ელექტრული მუშაობა და სიმძლავრე</a>
-            <a href="#" class="subject-link">17.6. ელექტრომამოძრავებელი ძალა (ემძ)</a>
-            <a href="#" class="subject-link">18.1. მაგნიტები</a>
-            <a href="#" class="subject-link">18.2. მაგნიტური ველი</a>
-            <a href="#" class="subject-link">18.3. ლორენცის ძალა</a>
-            <a href="#" class="subject-link">18.4. ამპერის ძალა</a>
+            <span class="subject-link topic-link">14.1. მუხტი</span>
+            <span class="subject-link topic-link">14.2. კულონის ძალა</span>
+            <span class="subject-link topic-link">14.3. ელექტრული ველი</span>
+            <span class="subject-link topic-link">15.1. ელექტრული პოტენციური ენერგია</span>
+            <span class="subject-link topic-link">15.2. ელექტრული პოტენციალი</span>
+            <span class="subject-link topic-link">15.3. შეჯამება: ელექტრული ძალა, ველი, პოტენციური ენერგია და პოტენციალი</span>
+            <span class="subject-link topic-link">16.1. ძაბვა</span>
+            <span class="subject-link topic-link">16.2. ტევადობა</span>
+            <span class="subject-link topic-link">16.3. დენი(ს ძალა)</span>
+            <span class="subject-link topic-link">16.4. წინაღობა</span>
+            <span class="subject-link topic-link">17.1. ელექტრული წრედი</span>
+            <span class="subject-link topic-link">17.2. კონდენსატორების შეერთება პარალელურად და მიმდევრობით</span>
+            <span class="subject-link topic-link">17.3. რეზისტორების შეერთება მიმდევრობით და პარალელურად</span>
+            <span class="subject-link topic-link">17.4. “ნესვის” ფორმულა</span>
+            <span class="subject-link topic-link">17.5. ელექტრული მუშაობა და სიმძლავრე</span>
+            <span class="subject-link topic-link">17.6. ელექტრომამოძრავებელი ძალა (ემძ)</span>
+            <span class="subject-link topic-link">18.1. მაგნიტები</span>
+            <span class="subject-link topic-link">18.2. მაგნიტური ველი</span>
+            <span class="subject-link topic-link">18.3. ლორენცის ძალა</span>
+            <span class="subject-link topic-link">18.4. ამპერის ძალა</span>
             </div>
 
 
             <hr>
             <center><h3>ოპტიკა</h3></center>
           <div id="subject-navigation">
-            <a href="#" class="subject-link">19.1. სინათლე</a>
-            <a href="#" class="subject-link">19.2. არეკვლა</a>
-            <a href="#" class="subject-link">19.3. სარკეები</a>
-            <a href="#" class="subject-link">20.1. სინათლის გარდატეხა</a>
-            <a href="#" class="subject-link">20.2. ლინზები</a>
+            <span class="subject-link topic-link">19.1. სინათლე</span>
+            <span class="subject-link topic-link">19.2. არეკვლა</span>
+            <span class="subject-link topic-link">19.3. სარკეები</span>
+            <span class="subject-link topic-link">20.1. სინათლის გარდატეხა</span>
+            <span class="subject-link topic-link">20.2. ლინზები</span>
             </div>
             
     </div>
@@ -158,5 +162,8 @@
         })
     })
     </script>
+
+  <script src="select_topics.js"></script>
+
 
 </html>

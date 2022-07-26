@@ -65,6 +65,14 @@ a:hover {
     color: var(--link-hover);
 }
 
+.nebula-link {
+    color: #314E9C;
+}
+
+.nebula-link:hover {
+    color: #48319c;
+}
+
 .bi {
     margin:0px;
     margin-right: .5em;
@@ -81,22 +89,28 @@ a:hover {
     text-decoration: none;
     padding: 23px;
     margin: 10px;
-    border: none;
+    /* border: 3px solid #00000000; */
     border-radius: 5px;
+    color: var(--link-color);
+    cursor: pointer;
+    user-select: none;
     background-color: #18181810;
 }
 
-.subject-link.selected {
+.topic-link {
+    border: 3px solid #00000000; /* trick */
+}
+
+.topic-link.selected {
     background-color: #ff990020;
     border: 3px solid var(--link-color);
 }
 
 .subject-link:hover {
-    border: none;
     background-color: #08203220;
 }
 
-.subject-link.selected:hover {
+.topic-link.selected:hover {
     background-color: #ff990030;
     border: 3px dashed var(--link-hover);
 }

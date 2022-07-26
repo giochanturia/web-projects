@@ -57,6 +57,12 @@
         </ol>
     </div>
 
-<script src="generate_problems.js"></script>
+<script>
+    function set_theme(theme) {
+        d3.select("body").node().classList = [theme]
+    }
+</script>
+
+<script type="module" src="generate_problems.js"></script>
 
 </html>
